@@ -1,13 +1,169 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;500;600;700&display=swap');
+ 
+/* colors used on the site */
+:root {
+  /* page background color */
+  --light-grey: #EDEDF6;
+  /* header h1, h2 and color of text in header and banner */
+  --dark-grey: #31343D;
+  /* color of navigation text, h3, background for labels, borders */
+  --light-blue: #92CCCD;
+  /* text color in main section and footer, paragraph about me */
+  --medium-grey: #435877;
+  /* color for labels in main section: h4, .description, .contactdetails */
+  --grey: #31333E;
+  /* highlight color for projects, and in selection */
+  --selected: #ba7753;
+  /* color to highligh images */
+  --lighten: yellow;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::selection {
+  background-color: var(--selected);
+  color: var(--dark-grey);
+}
+
+/* Element selectors */
+
+/* Setup background color and font for main content of site */
+body {
+  font-family: 'Source+Serif+Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--medium-grey);
+  background-color: var(--light-grey);
+}
+
+/* Design header which includes header label with name, avatar, and navigation bar */
+.navbar {
+  background-image: url("img/navbar.jpg");
+  background-color: var(--dark-grey);   
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  color: var(--light-blue);
+  padding: 0 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.link {
+  color: var(--dark-grey);
+  padding: 0 0.5rem;
+}
+
+.navbar .links {
+  margin-right: 2rem;
+}
+
+/* .navbar button
+ {
+  background-color: var(--dark-grey);
+  color: var(--light-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 0.1 rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+} */
+
+.navbar button {
+  background: none;
+  color: var(--light-blue);
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 1
+}
+
+button.active {
+  /* background-color: var(--light-blue);
+  color: var(--medium-grey); */
+  border-radius: 2px;
+  border-color: var(--light-blue);
+  border-style: groove;
+}
+
+.navbar button:hover {
+  color: var(--selected);
+  cursor: pointer;
+}
+
+/* rendering project cards within projects */
+.projects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  justify-content: space-around;
+  flex: 0 0 50rem;
+}
+
+.project {
+  padding: 0.5rem;
+}
+
+.project-header {
+  align-self: flex-end;
+  position: absolute;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-blue);
+  opacity: 0.7
+}
+
+.project-header h3 {
+  margin: 0.3rem;
+}
+
+.project-card {
+  border: 0.5rem solid var(--light-blue);
+  display: flex;
+  background-color: var(--light-blue);
+  align-items: center;
+}
+
+.project img:hover {
+  filter: brightness(1);
+  filter: contrast(200%);
+  filter: invert(75%);
+  filter: opacity(25%);
+  filter: saturate(30%);
+  filter: sepia(60%);
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex: 1 1 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  margin: 1rem;
+  font-size: 2rem;
+  color: var(--medium-grey)
+}
+
+.footer-link:hover {
+  color: var(--selected)
 }

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;500;600;700&display=swap');
  
 /* colors used on the site */
@@ -14,8 +12,8 @@
   --medium-grey: #435877;
   /* color for labels in main section: h4, .description, .contactdetails */
   --grey: #31333E;
-  /* highlight color for projects, and in selection */
-  --selected: #ba7753;
+  /* highlight color for projects, and in selection, considered darker color as well #60A7A8  */
+  --selected: #B5E8E8;
   /* color to highligh images */
   --lighten: yellow;
 }
@@ -36,7 +34,7 @@ body {
   background-color: var(--light-grey);
 }
 
-/* Design header which includes header label with name, avatar, and navigation bar */
+/* Design header which includes header label with name, and navigation bar */
 .navbar {
   background-image: url("img/navbar.jpg");
   background-color: var(--dark-grey);   
@@ -102,7 +100,7 @@ button.active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 4rem;
+  margin: 2rem;
   justify-content: space-around;
   flex: 0 0 50rem;
 }
@@ -166,4 +164,19 @@ button.active {
 
 .footer-link:hover {
   color: var(--selected)
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem
+}
+
+.tab-header {
+  color: var(--dark-grey);
+}
+
+.avatar {
+  height: 20px;
 }

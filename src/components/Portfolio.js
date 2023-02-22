@@ -28,7 +28,7 @@ const Portfolio = () => {
 
   return ( 
     <div>
-      <h2>My Portfolio</h2>
+      {/* <h2>My Portfolio</h2> */}
       <div className="projects">
         {projects.map((project) => (
           <div className="project">

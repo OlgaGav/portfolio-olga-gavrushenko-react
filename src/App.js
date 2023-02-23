@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
     <nav className='navbar'>
-      <h1>Olga Gavrushenko</h1>
+      <h1 onClick={() => handleTabClick("about")}>Olga Gavrushenko</h1>
       <div className='links'>
         <button
           className={activeTab === "about" ? "active" : ""}

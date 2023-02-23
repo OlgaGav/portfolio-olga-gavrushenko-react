@@ -39,7 +39,7 @@ const handleDownload = () => {
 
 const Resume = () => {
   return (
-    <div className="tab-container p-4">
+    <div className="tab-container">
       <div>
         <h2>Resume Page</h2>
       </div>

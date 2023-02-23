@@ -12,7 +12,6 @@ const Portfolio = () => {
           'CSS',
           'API'
         ],
-        // techStack: 'JavaScript, HTML, CSS, API',
         imgSrc: './img/project1.png'
       },
       { 
@@ -21,13 +20,28 @@ const Portfolio = () => {
         gitHubLink: 'https://github.com/isayahdurst/centiment',
         applLink: 'https://centiment-inc.herokuapp.com',
         techStack: ['Node', 'Express', 'Dotenv', 'MySQL', 'Sequelize', 'Bcyrpt', 'JWT', 'Cookies', 'Handlebars', 'Bulma CSS', 'Multer'],
-        // techStack: 'Node, Express, Dotenv, MySQL, Sequelize, Bcyrpt, JWT, Cookies, Handlebars, Bulma CSS, Multer',
         imgSrc: './img/project2.jpg'
       },
+      {
+        id: 3,
+        title: "Weather Forecast Dashboard",
+        gitHubLink: "https://github.com/OlgaGav/weather-dashboard-5-day-forecast",
+        applLink: "https://olgagav.github.io/weather-dashboard-5-day-forecast/",
+        techStack: ['HTML','CSS','JavaScript','Bootstrap','OpenWeather API'],
+        imgSrc: './img/weather.jpg'
+      },
+      {
+        id: 4,
+        title: "Simple Blog",
+        gitHubLink: "https://github.com/OlgaGav/share-ideas-tech-blog",
+        applLink: "https://share-ideas-tech-blog.herokuapp.com/",
+        techStack: ["HTML","CSS", "Materialize","JavaScript","MySQL","Sequelize","Express, express-handlebars","bcrypt","Node.js", "Heroku"],
+        imgSrc: './img/manuscript.jpg'
+      }
     ]
 
   return ( 
-    <div>
+    <div className="tab-container">
       {/* <h2>My Portfolio</h2> */}
       <div className="projects">
         {projects.map((project) => (
@@ -36,11 +50,11 @@ const Portfolio = () => {
             <img src={project.imgSrc} alt="preview of the project" />
             <div className="project-header">
               <h3>{project.title}</h3>
-              <a className="link" href={project.gitHubLink}>GitHub</a>
-              <a className="link" href={project.applLink}>View appl.</a>
+              <a className="link" target="_blank" rel="noopener noreferrer" href={project.gitHubLink}>GitHub</a>
+              <a className="link" target="_blank" rel="noopener noreferrer" href={project.applLink}>View appl.</a>
             </div>
           </div> 
-          <h3>Tech Stack:</h3>
+          <h4>Tech Stack:</h4>
           <ul>
             {project.techStack.map((option) => (
               <li>{option}</li>

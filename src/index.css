@@ -23,24 +23,27 @@
   color: var(--dark-grey);
 }
 
+html {
+  background-color: var(--light-grey);
+}
 /* Element selectors */
 
-/* Setup background color and font for main content of site */
+/* Setup background color and font for tab content */
 .tab-container {
   font-family: 'Source+Serif+Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--medium-grey);
   background-color: var(--light-grey);
+  padding: 3rem;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  height: 100vh;
-  
+  padding: 2rem; 
+  /* height: 100vh */
 }
 
 /* Design header which includes header label with name, and navigation bar */
@@ -92,6 +95,19 @@ button.active {
   cursor: pointer;
 }  
 
+.contact-button {
+  background-color: var(--medium-grey) !important;
+  color: var(--light-blue) !important;
+  border: none !important;
+  padding: 0.5rem 2rem !important;
+  font-size: 1.3rem !important;
+  cursor: pointer !important;
+  margin-top: 1rem;
+}
+.contact-button:hover {
+  color: var(--selected) !important;
+  cursor: pointer !important;
+}
 /* rendering project cards within projects */
 .projects{
   display: flex;

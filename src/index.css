@@ -12,8 +12,8 @@
   --medium-grey: #435877;
   /* color for labels in main section: h4, .description, .contactdetails */
   --grey: #31333E;
-  /* highlight color for projects, and in selection, considered darker color as well #60A7A8  */
-  --selected: #B5E8E8;
+  /* highlight color for projects, and in selection, darker color #60A7A8 or lighter one #B5E8E8 */
+  --selected: #60A7A8;
   /* color to highligh images */
   --lighten: yellow;
 }
@@ -26,12 +26,21 @@
 /* Element selectors */
 
 /* Setup background color and font for main content of site */
-body {
+.tab-container {
   font-family: 'Source+Serif+Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--medium-grey);
   background-color: var(--light-grey);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+  
 }
 
 /* Design header which includes header label with name, and navigation bar */
@@ -61,16 +70,6 @@ body {
   margin-right: 2rem;
 }
 
-/* .navbar button
- {
-  background-color: var(--dark-grey);
-  color: var(--light-blue);
-  text-decoration: underline;
-  text-decoration-thickness: 0.1 rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-} */
-
 .navbar button {
   background: none;
   color: var(--light-blue);
@@ -83,8 +82,6 @@ body {
 }
 
 button.active {
-  /* background-color: var(--light-blue);
-  color: var(--medium-grey); */
   border-radius: 2px;
   border-color: var(--light-blue);
   border-style: groove;
@@ -93,14 +90,14 @@ button.active {
 .navbar button:hover {
   color: var(--selected);
   cursor: pointer;
-}
+}  
 
 /* rendering project cards within projects */
 .projects{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2rem;
+  padding: 2rem;
   justify-content: space-around;
   flex: 0 0 50rem;
 }
@@ -154,6 +151,8 @@ button.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-color: var(--medium-grey);
+  border-top-style:solid;
 }
 
 .footer-link {
@@ -166,17 +165,25 @@ button.active {
   color: var(--selected)
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem
-}
-
 .tab-header {
   color: var(--dark-grey);
 }
 
 .avatar {
   height: 20px;
+}
+
+.custom-button {
+  color: var(--medium-grey) !important;
+  border-color: var(--medium-grey) !important;
+}
+
+.custom-button:hover {
+  background-color: var(--medium-grey) !important;
+  border-color: var(--medium-grey) !important;
+  color: var(--light-blue) !important;
+}
+
+h4 {
+  padding-top: 1rem;
 }

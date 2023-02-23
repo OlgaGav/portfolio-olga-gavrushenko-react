@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-olga-gavrushenko/static/css/main.bfef26fb.css",
+    "main.js": "/portfolio-olga-gavrushenko/static/js/main.2c2f8b3b.js",
+    "static/js/787.03cae91c.chunk.js": "/portfolio-olga-gavrushenko/static/js/787.03cae91c.chunk.js",
+    "static/media/navbar.jpg": "/portfolio-olga-gavrushenko/static/media/navbar.c2d7e067b25c3662a8a1.jpg",
+    "index.html": "/portfolio-olga-gavrushenko/index.html",
+    "main.bfef26fb.css.map": "/portfolio-olga-gavrushenko/static/css/main.bfef26fb.css.map",
+    "main.2c2f8b3b.js.map": "/portfolio-olga-gavrushenko/static/js/main.2c2f8b3b.js.map",
+    "787.03cae91c.chunk.js.map": "/portfolio-olga-gavrushenko/static/js/787.03cae91c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfef26fb.css",
+    "static/js/main.2c2f8b3b.js"
+  ]
+}

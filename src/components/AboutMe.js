@@ -5,7 +5,7 @@ const AboutMe = () => {
         <div className="row">
           <div className="col-sm-10 col-md-5 col-lg-5">
             <img
-              src="./../img/avatarL.jpg"
+              src="./img/avatarL.jpg"
               alt="head shot of Olga Gavrushenko"
               className="img-thumbnail"
             />

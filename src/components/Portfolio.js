@@ -1,3 +1,9 @@
+import imageProject1 from "./img/project1.png";
+import imageProject2 from "./img/project2.jpg";
+import imageProject3 from "./img/weather.jpg";
+import imageProject4 from "./img/manuscript.jpg";
+
+
 const Portfolio = () => {
   const projects = [
     {
@@ -6,7 +12,7 @@ const Portfolio = () => {
       gitHubLink: "https://github.com/OlgaGav/what-am-i-craving-today",
       applLink: "https://olgagav.github.io/what-am-i-craving-today/",
       techStack: ["JavaScript", "HTML", "CSS", "API"],
-      imgSrc: "./img/project1.png",
+      imgSrc: imageProject1,
     },
     {
       id: 2,
@@ -26,7 +32,7 @@ const Portfolio = () => {
         "Bulma CSS",
         "Multer",
       ],
-      imgSrc: "./img/project2.jpg",
+      imgSrc: imageProject2,
     },
     {
       id: 3,
@@ -34,7 +40,7 @@ const Portfolio = () => {
       gitHubLink: "https://github.com/OlgaGav/weather-dashboard-5-day-forecast",
       applLink: "https://olgagav.github.io/weather-dashboard-5-day-forecast/",
       techStack: ["HTML", "CSS", "JavaScript", "Bootstrap", "OpenWeather API"],
-      imgSrc: "./img/weather.jpg",
+      imgSrc: imageProject3,
     },
     {
       id: 4,
@@ -53,7 +59,7 @@ const Portfolio = () => {
         "Node.js",
         "Heroku",
       ],
-      imgSrc: "./img/manuscript.jpg",
+      imgSrc: imageProject4,
     },
   ];
 

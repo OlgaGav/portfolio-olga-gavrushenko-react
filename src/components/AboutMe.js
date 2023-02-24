@@ -1,4 +1,4 @@
-const photoSrc = "./../img/avatarL.jpg";
+import photoSrc from "./img/avatarL.jpg";
 
 const AboutMe = () => {
   return (

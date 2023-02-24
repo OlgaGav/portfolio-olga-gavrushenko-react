@@ -59,9 +59,9 @@ html {
 
 .navbar h1 {
   color: var(--light-blue);
-  padding: 0 2rem;
-  margin-left: 2rem;
+  padding: 1rem 3rem 0 3rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .link {
@@ -202,4 +202,26 @@ button.active {
 
 h4 {
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button.active {
+    border-radius: 1px;
+  }
+
+  .navbar {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  
+  .navbar h1 {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
 }

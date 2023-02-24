@@ -48,7 +48,7 @@ html {
 
 /* Design header which includes header label with name, and navigation bar */
 .navbar {
-  background-image: url("img/navbar.jpg");
+  background-image: url("../img/navbar.jpg");
   background-color: var(--dark-grey);   
   display: flex;
   flex-direction: row;

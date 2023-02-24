@@ -1,3 +1,5 @@
+const photoSrc = "./../img/avatarL.jpg";
+
 const AboutMe = () => {
   return (
     <div className="tab-container">
@@ -5,7 +7,7 @@ const AboutMe = () => {
         <div className="row">
           <div className="col-sm-10 col-md-5 col-lg-5">
             <img
-              src="./img/avatarL.jpg"
+              src={photoSrc}
               alt="head shot of Olga Gavrushenko"
               className="img-thumbnail"
             />

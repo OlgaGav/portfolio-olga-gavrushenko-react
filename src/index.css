@@ -4,6 +4,7 @@
 :root {
   /* page background color */
   --light-grey: #EDEDF6;
+  --lighter-grey: #ddddea;
   /* header h1, h2 and color of text in header and banner */
   --dark-grey: #31343D;
   /* color of navigation text, h3, background for labels, borders */
@@ -123,16 +124,13 @@ button.active {
 }
 
 .project-header {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   position: absolute;
   margin: 0 0 1rem 0;
   padding: 0.5rem 1rem;
   background-color: var(--light-blue);
-  opacity: 0.7
-}
-
-.project-header h3 {
-  margin: 0.3rem;
+  opacity: 0.7;
+  top: 1rem;
 }
 
 .project-card {
@@ -142,13 +140,28 @@ button.active {
   align-items: center;
 }
 
-.project img:hover {
+.project img:hover,
+.img-project:hover 
+{
   filter: brightness(1);
   filter: contrast(200%);
   filter: invert(75%);
   filter: opacity(25%);
   filter: saturate(30%);
   filter: sepia(60%);
+}
+
+.img-project {
+  padding: 0.25rem;
+  background-color: var(--light-blue);
+  /* border: 1px solid var(--selected); */
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background-color: var(--lighter-grey);
+  border: 1px solid var(--light-blue);
 }
 
 .footer-links {
@@ -204,6 +217,11 @@ h4 {
   padding-top: 1rem;
 }
 
+.aboutMe {
+  padding: 2rem;
+}
+
+
 @media only screen and (max-width: 600px) {
   .navbar button {
     padding: 0.5rem;
@@ -222,6 +240,10 @@ h4 {
   .navbar h1 {
     padding-top: 0.5rem;
     font-size: 1.5rem;
+  }
+
+  .aboutMe {
+    padding: 2rem 0 0 0;
   }
 
 }

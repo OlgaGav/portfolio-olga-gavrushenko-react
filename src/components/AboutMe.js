@@ -12,7 +12,7 @@ const AboutMe = () => {
               className="img-thumbnail"
             />
           </div>
-          <div className="col-sm-10 col-md-7 col-lg-7 p-5">
+          <div className="col-sm-10 col-md-7 col-lg-7 aboutMe text-break">
             <p>
               I am certified Full Stack Developer. Completed Berkley UC
               Bootcamp. I am proficient in HTML5, CSS,

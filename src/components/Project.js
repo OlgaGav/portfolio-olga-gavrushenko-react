@@ -30,14 +30,8 @@ const Project = ({ projects }) => {
                   View appl.
                 </a>
               </div>
-
               <div className="card-body">
-                <h5>Tech Stack:</h5>
-                <ul>
-                  {project.techStack.map((option, index) => (
-                    <li key={index}>{option}</li>
-                  ))}
-                </ul>
+                <span className="bold">Tech Stack: </span> {project.techStack.join(", ")}
               </div>
             </div>
           </div>

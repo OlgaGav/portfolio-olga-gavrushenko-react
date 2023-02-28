@@ -1,21 +1,58 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-useEffect(() => {
-    const script = document.createElement("script");
-    script.id = "ff-script";
-    script.src = "https://formfacade.com/include/113207398456277540214/form/1FAIpQLSe7fJAe2B4xrAY9J7wjPgDPwzUgV9c6joEIySRAm8Y4E2DeIQ/classic.js?div=ff-compose";
-    script.defer = true;
-    script.async = true;
-    document.body.appendChild(script);
+  const [state, handleSubmit] = useForm("mqkobelg");
+  if (state.succeeded) {
+    return (
+      <div class="alert alert-success" role="alert">
+        Thank you for your message!
+      </div>
+    );
+  }
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  return (
+    <div className="tab-container">
+      <h2>Contact</h2>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="Name">Name</label>
+            <input id="name" name="name" className="form-control" placeholder="ex. John Smith" required/>
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
 
-  return <div id="ff-compose"></div>;
+          <div>
+            <label htmlFor="email">Email Address</label>
+            <input id="email" type="email" name="email" className="form-control" placeholder="name@example.com" required/>
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+
+          <div>
+          <label htmlFor="message">Message</label>
+            <textarea id="message" name="message" className="form-control" placeholder="Your message" required/>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+
+          <button type="submit" className="contact-button" disabled={state.submitting}>
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;
-

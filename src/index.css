@@ -26,6 +26,7 @@
 
 html {
   background-color: var(--light-grey);
+  background-image: url("../img/bg_white_a.jpg");
 }
 /* Element selectors */
 
@@ -36,6 +37,7 @@ html {
   line-height: 1.6;
   color: var(--medium-grey);
   background-color: var(--light-grey);
+  background-image: url("../img/bg_white_a.jpg");
   padding: 3rem;
 }
 

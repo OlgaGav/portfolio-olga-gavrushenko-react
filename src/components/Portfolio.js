@@ -2,6 +2,8 @@ import imageProject1 from "./img/project1.png";
 import imageProject2 from "./img/project2.jpg";
 import imageProject3 from "./img/weather.jpg";
 import imageProject4 from "./img/manuscript.jpg";
+import imageProject5 from "./img/project-pastel-puzzles.jpg";
+import imageProject6 from "./img/project-led-wall.jpg";
 import Project from "./Project";
 
 const Portfolio = () => {
@@ -60,6 +62,30 @@ const Portfolio = () => {
         "Heroku",
       ],
       imgSrc: imageProject4,
+    },
+    {
+      id: 5,
+      title: "Quiz Simple",
+      gitHubLink: "https://github.com/OlgaGav/quick-javascript-quiz",
+      applLink: "https://olgagav.github.io/quick-javascript-quiz/",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      imgSrc: imageProject5,
+    },
+    {
+      id: 4,
+      title: "Password Generator",
+      gitHubLink: "https://github.com/OlgaGav/password-generator",
+      applLink: "https://olgagav.github.io/password-generator/",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      imgSrc: imageProject6,
     },
   ];
 

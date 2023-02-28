@@ -8,8 +8,10 @@
   This is portfolio of Olga Gavrushenko, which present contact points, projects, skills and link to resume.
   
   Tech Stack: 
+  - JavaScript
   - React 
   - Bootstrap
+  - @formspree/react (to submit form)
 
   ![this image display the screenshot of the 'Olga Gavrushenko protfolio (React)' application](img/profile_screensot.png)
 

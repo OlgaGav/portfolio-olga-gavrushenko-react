@@ -4,8 +4,8 @@
 :root {
   /* page background color */
   --light-grey: #EDEDF6;
-  --lighter-grey: #ddddea;
-  /* header h1, h2 and color of text in header and banner */
+  --lighter-grey: #ebebeb;
+  /* header h1, h2 and color of text in header and banner #ececec #ddddea*/
   --dark-grey: #31343D;
   /* color of navigation text, h3, background for labels, borders */
   --light-blue: #92CCCD;
@@ -178,11 +178,11 @@ button.active {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: var(--light-grey);
+  background-color: var(--light-blue);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-color: var(--medium-grey);
+  border-top-color: var(--light-blue);
   border-top-style:solid;
 }
 

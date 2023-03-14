@@ -14,11 +14,48 @@ const Contact = () => {
   return (
     <div className="tab-container">
       <h2>Contact</h2>
+      <p />
+      <p>
+        LinkedIn:{" "}
+        <a
+          href="https://www.linkedin.com/in/olga-gavrushenko/"
+          className="contact-link"
+        >
+          https://www.linkedin.com/in/olga-gavrushenko/
+        </a>
+      </p>
+      <p>
+        GitHub:{" "}
+        <a href="https://github.com/OlgaGav/" className="contact-link">
+          https://github.com/OlgaGav/
+        </a>
+      </p>
+      <p>
+        Email:{" "}
+        <a
+          href="mailto:olga.gavrushenko@gmail.com?subject=[Portfolio]%20Contact"
+          className="contact-link"
+        >
+          Olga.Gavrushenko@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Feel free to contact in social media, email or use form below. I will
+        respond as soon as I can.
+      </p>
+
       <div>
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="Name">Name</label>
-            <input id="name" name="name" className="form-control" placeholder="ex. John Smith" required/>
+            <input
+              id="name"
+              name="name"
+              className="form-control"
+              placeholder="ex. John Smith"
+              required
+            />
             <ValidationError
               prefix="Email"
               field="email"
@@ -28,7 +65,14 @@ const Contact = () => {
 
           <div>
             <label htmlFor="email">Email Address</label>
-            <input id="email" type="email" name="email" className="form-control" placeholder="name@example.com" required/>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              className="form-control"
+              placeholder="name@example.com"
+              required
+            />
             <ValidationError
               prefix="Email"
               field="email"
@@ -37,8 +81,14 @@ const Contact = () => {
           </div>
 
           <div>
-          <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" className="form-control" placeholder="Your message" required/>
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              className="form-control"
+              placeholder="Your message"
+              required
+            />
             <ValidationError
               prefix="Message"
               field="message"
@@ -46,7 +96,11 @@ const Contact = () => {
             />
           </div>
 
-          <button type="submit" className="contact-button" disabled={state.submitting}>
+          <button
+            type="submit"
+            className="contact-button"
+            disabled={state.submitting}
+          >
             Submit
           </button>
         </form>

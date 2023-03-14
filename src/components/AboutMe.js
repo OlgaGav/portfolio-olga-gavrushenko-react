@@ -15,9 +15,10 @@ const AboutMe = () => {
           <div className="col-sm-10 col-md-7 col-lg-7 aboutMe text-break">
             <p>
               I am certified Full Stack Developer. Completed Berkley UC
-              Bootcamp. I am proficient in HTML5, CSS,
-              JavaScript, jQuery, Bootstrap, Express.js, React.js, databases,
-              MongoDB, Node.js, MySQL, Command Line, Git and more.
+              Bootcamp. I am proficient in HTML5, CSS, JavaScript, jQuery,
+              Bootstrap, Node.js, Express.js, React.js, MongoDB, MySQL, Git and
+              more. Proficient in all phases of the software development
+              lifecycle (SDLC).
             </p>
             <p>
               In background I have progressive experiense in Quality Assuranse.
@@ -26,8 +27,7 @@ const AboutMe = () => {
               functional and non-functional requirements, requirements analysis,
               design automation framework for UI using Selenium WebDriver and
               RESTfull API using RestAssured (Java), develop and maintain
-              frameworks. Proficient in all phases of the software development
-              lifecycle (SDLC).
+              frameworks. 
             </p>
           </div>
         </div>

@@ -46,7 +46,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem; 
-  /* height: 100vh */
 }
 
 /* Design header which includes header label with name, and navigation bar */
@@ -192,8 +191,13 @@ button.active {
   color: var(--medium-grey)
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.contact-link:hover {
   color: var(--selected)
+}
+
+.contact-link {
+  color: var(--medium-grey)
 }
 
 .tab-header {

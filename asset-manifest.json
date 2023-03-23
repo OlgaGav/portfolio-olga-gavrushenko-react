@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-olga-gavrushenko-react/static/css/main.211978d5.css",
-    "main.js": "/portfolio-olga-gavrushenko-react/static/js/main.c9b5343d.js",
+    "main.js": "/portfolio-olga-gavrushenko-react/static/js/main.65e4ec57.js",
     "static/js/651.b7cddd52.chunk.js": "/portfolio-olga-gavrushenko-react/static/js/651.b7cddd52.chunk.js",
     "static/media/avatarL.jpg": "/portfolio-olga-gavrushenko-react/static/media/avatarL.714ca2e529bc590a0c9e.jpg",
     "static/media/bg_white_a.jpg": "/portfolio-olga-gavrushenko-react/static/media/bg_white_a.3261e91c47de7491b551.jpg",
@@ -13,11 +13,11 @@
     "static/media/project1.png": "/portfolio-olga-gavrushenko-react/static/media/project1.b46bd4a2825063000ac2.png",
     "index.html": "/portfolio-olga-gavrushenko-react/index.html",
     "main.211978d5.css.map": "/portfolio-olga-gavrushenko-react/static/css/main.211978d5.css.map",
-    "main.c9b5343d.js.map": "/portfolio-olga-gavrushenko-react/static/js/main.c9b5343d.js.map",
+    "main.65e4ec57.js.map": "/portfolio-olga-gavrushenko-react/static/js/main.65e4ec57.js.map",
     "651.b7cddd52.chunk.js.map": "/portfolio-olga-gavrushenko-react/static/js/651.b7cddd52.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.211978d5.css",
-    "static/js/main.c9b5343d.js"
+    "static/js/main.65e4ec57.js"
   ]
 }
